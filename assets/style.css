@@ -5,14 +5,72 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: whitesmoke;
 }
 
+.header {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+    background-color: #00A36C;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20;
+}
 .hero {
-    height: 400px;
+    height: 200px;
     width: 100%;
    margin-bottom: 25px;
 }
-.header {
+.content{
+   display: inline-block;
+   width: 100%;
+}
+.my-work {
+   width: 100%;
+}
+.my-work img{
+    padding: 20px;
+    margin:20px
+}
+.my-work h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
 
+.project1 {
+    flex: 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 2%;
+}
+
+.project1 h3 {
+    text-align:start;
+    font-size: 24px;
+}
+
+.project2 {
+    flex: 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 2%;
+    margin-top: 25px;
+}
+.project2 h3 {
+    text-align:start;
+    font-size: 24px;
 }
