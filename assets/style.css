@@ -1,76 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* used https://www.youtube.com/watch?v=PwWHL3RyQgk to setup the navigation bar
+used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
+*/ 
+
+.body {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
 }
 
-body {
-    background-color: whitesmoke;
+.body>*{
+  padding: 10px
+  margin: 10px;
+  flex: 1 100%
 }
 
-.header {
-    color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 25px;
-    background-color: #00A36C;
+.header{
+  background: lightgray;
+  height: 150px;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 30px;
-}
-
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20;
-}
-.hero {
-    height: 200px;
-    width: 100%;
-   margin-bottom: 25px;
-}
 .content{
-   display: inline-block;
-   width: 100%;
+  text-align: left;
+  font-size:  24px;;
 }
+
 .my-work {
-   width: 100%;
+  text-align: center;
 }
-.my-work img{
-    padding: 20px;
-    margin:20px
-}
+
 .my-work h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+
 }
 
 .project1 {
-    flex: 0 0 0;
-    flex-direction: column;
-    justify-content: center;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 2%;
-}
-
-.project1 h3 {
-    text-align:start;
-    font-size: 24px;
+  background-color: lightgray;
+  height: 250px;
+  width: 500px;
+  margin: 50px;
+  border-width: 10px;
+  border: black;
+  border-style: solid;
+  
 }
 
 .project2 {
-    flex: 0 0 0;
-    flex-direction: column;
-    justify-content: center;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 2%;
-    margin-top: 25px;
+  background-color: lightgray;
+  height: 250px;
+  width: 500px;
+  margin: 50px;
+  border-width: 10px;
+  border: black;
+  border-style: solid;
 }
-.project2 h3 {
-    text-align:start;
-    font-size: 24px;
+
+
+
+.footer {
+  background-color: blue;
+  height: 150px;
+  font-size: 25px;
+  color:white
+}
+
+/* Used media queries to make the webpage more responsive to resizing*/
+@media all and (min-width: 992px){
+  .content{
+    flex: 3;
+  }
+  .my-work{
+    order: 1;
+  }
+
+  .project1{
+    order: 2;
+  }
+
+  .project2{
+    order: 2;
+  }
+
+  .contact-me{
+    order: 2;
+  }
+
+  .about-me{
+    order:2;
+  }
+  
+  .footer{
+    order:4;
+  }
+}
+ 
+@media all and (min-width: 750px) {
+    .my-work{
+      flex:1
+    }
+
 }
