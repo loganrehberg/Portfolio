@@ -1,65 +1,89 @@
 /* used https://www.youtube.com/watch?v=PwWHL3RyQgk to setup the navigation bar
 used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 */ 
-
-.body {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-}
-
-.body>*{
+*{
   padding: 10px
   margin: 10px;
   flex: 1 100%
 }
 
-.header{
-  background: lightgray;
-  height: 150px;
+.body {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  background-image: url("./images/compute-ea4c57a4.png");
+  
 }
 
+.header{
+  color: white;
+  height: 150px;
+}
+.header nav{
+  color:white
+}
+
+.header ul{
+  list-style-type: none;
+}
+
+
 .content{
-  text-align: left;
-  font-size:  24px;;
+  text-align: center;
+  font-size:  24px;
 }
 
 .my-work {
   text-align: center;
+  color: white;
 }
 
 .my-work h2 {
-
-}
-
-.project1 {
-  background-color: lightgray;
-  height: 250px;
-  width: 500px;
-  margin: 50px;
-  border-width: 10px;
-  border: black;
-  border-style: solid;
+  text-decoration: underline;
   
 }
 
-.project2 {
-  background-color: lightgray;
-  height: 250px;
+.project1 {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
   width: 500px;
   margin: 50px;
   border-width: 10px;
-  border: black;
+  border: white;
   border-style: solid;
+}
+
+
+.project2 {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  margin: 50px;
+  border-width: 10px;
+  border: white;
+  border-style: solid;
+}
+
+
+
+.contact-me{
+  color: whitesmoke;
+}
+
+.about-me{
+  color:aliceblue;
 }
 
 
 
 .footer {
-  background-color: blue;
   height: 150px;
   font-size: 25px;
-  color:white
+  color:aliceblue
 }
 
 /* Used media queries to make the webpage more responsive to resizing*/
