@@ -1,10 +1,10 @@
 /* used https://www.youtube.com/watch?v=PwWHL3RyQgk to setup the navigation bar
 used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
-*/ 
-*{
-  padding: 10px
+*/
+* {
+  padding: 10px;
   margin: 10px;
-  flex: 1 100%
+  flex: 1 100%;
 }
 
 .body {
@@ -12,25 +12,24 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
   flex-flow: row wrap;
   text-align: center;
   background-image: url("./images/compute-ea4c57a4.png");
-  
 }
 
-.header{
+.header {
   color: white;
   height: 150px;
 }
-.header nav{
-  color:white
+.header nav {
+  color: white;
+  font-size: 25px;
 }
 
-.header ul{
+.header ul {
   list-style-type: none;
 }
 
-
-.content{
+.content {
   text-align: center;
-  font-size:  24px;
+  font-size: 24px;
 }
 
 .my-work {
@@ -40,27 +39,23 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 
 .my-work h2 {
   text-decoration: underline;
-  
 }
 
 .project1 {
   display: inline-block;
   flex-direction: column;
   align-items: center;
-  height: 450px;
   width: 500px;
   margin: 50px;
   border-width: 10px;
   border: white;
   border-style: solid;
 }
-
 
 .project2 {
   display: inline-block;
   flex-direction: column;
   align-items: center;
-  height: 350px;
   width: 500px;
   margin: 50px;
   border-width: 10px;
@@ -68,57 +63,56 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
   border-style: solid;
 }
 
-
-
-.contact-me{
+.contact-me {
   color: whitesmoke;
 }
 
-.about-me{
-  color:aliceblue;
+.contact-me li {
+  list-style-type: none;
 }
 
-
+.about-me {
+  color: aliceblue;
+}
 
 .footer {
   height: 150px;
   font-size: 25px;
-  color:aliceblue
+  color: aliceblue;
 }
 
 /* Used media queries to make the webpage more responsive to resizing*/
-@media all and (min-width: 992px){
-  .content{
+@media all and (min-width: 992px) {
+  .content {
     flex: 3;
   }
-  .my-work{
+  .my-work {
     order: 1;
   }
 
-  .project1{
+  .project1 {
     order: 2;
   }
 
-  .project2{
+  .project2 {
     order: 2;
   }
 
-  .contact-me{
+  .contact-me {
     order: 2;
   }
 
-  .about-me{
-    order:2;
+  .about-me {
+    order: 2;
   }
-  
-  .footer{
-    order:4;
+
+  .footer {
+    order: 4;
   }
 }
- 
-@media all and (min-width: 750px) {
-    .my-work{
-      flex:1
-    }
 
+@media all and (min-width: 750px) {
+  .my-work {
+    flex: 1;
+  }
 }
