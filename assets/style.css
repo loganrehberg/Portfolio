@@ -3,7 +3,7 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav bar
 */
 * {
-  padding: 10px;
+  padding: 10px; 
   margin: 10px;
   flex: 1 100%;
 }
