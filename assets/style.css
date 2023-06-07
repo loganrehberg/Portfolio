@@ -1,5 +1,6 @@
 /* used https://www.youtube.com/watch?v=PwWHL3RyQgk to setup the navigation bar
 used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
+used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav bar
 */
 * {
   padding: 10px;
@@ -17,6 +18,7 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 .header {
   color: white;
   height: 150px;
+  text-align: left;
 }
 .header nav {
   color: white;
@@ -25,11 +27,35 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 
 .header ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header li {
+  float: right;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header li a:hover{
+  text-decoration: underline white;
 }
 
 .content {
   text-align: center;
   font-size: 24px;
+}
+
+.about-me {
+  color: aliceblue;
+  text-decoration: underline;
 }
 
 .my-work {
@@ -45,18 +71,25 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
   display: inline-block;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  height: 800px;
+  width: 950px;
   margin: 50px;
   border-width: 10px;
   border: white;
   border-style: solid;
+}
+ 
+.float-left {
+  display: inline-block;
+  justify-content: center;
 }
 
 .project2 {
   display: inline-block;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  height: 800px;
+  width: 950px;
   margin: 50px;
   border-width: 10px;
   border: white;
@@ -65,15 +98,14 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 
 .contact-me {
   color: whitesmoke;
+  position: relative;
+  margin-top: 20px;
 }
 
 .contact-me li {
   list-style-type: none;
 }
 
-.about-me {
-  color: aliceblue;
-}
 
 .footer {
   height: 150px;
@@ -81,38 +113,12 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
   color: aliceblue;
 }
 
-/* Used media queries to make the webpage more responsive to resizing*/
-@media all and (min-width: 992px) {
-  .content {
-    flex: 3;
-  }
-  .my-work {
-    order: 1;
-  }
+/* Used media queries to make the webpage resize based on device*/
 
-  .project1 {
-    order: 2;
-  }
-
-  .project2 {
-    order: 2;
-  }
-
-  .contact-me {
-    order: 2;
-  }
-
+@media screen and (max-width: 992px) {
   .about-me {
-    order: 2;
-  }
-
-  .footer {
-    order: 4;
+    width: 100%;
+    float: center;
   }
 }
 
-@media all and (min-width: 750px) {
-  .my-work {
-    flex: 1;
-  }
-}
