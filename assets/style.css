@@ -3,29 +3,31 @@ used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav bar
 */
 * {
-  padding: 10px; 
+  padding: 10px;
   margin: 10px;
-  flex: 1 100%;
+  /* flex: 1 100%; */
 }
 
 .body {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
-  text-align: center;
+  text-align: left;
+  flex: 0 0 100%;
+  width: 100%;  */
   background-image: url("./images/compute-ea4c57a4.png");
 }
 
 .header {
-  color: white;
-  height: 150px;
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  color: whitesmoke;
 }
 .header nav {
-  color: white;
   font-size: 25px;
 }
 
 .header ul {
+  justify-content: end;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -37,14 +39,11 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
 }
 
 .header li a {
-  display: block;
   color: white;
-  text-align: right;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-.header li a:hover{
+.header li a:hover {
   text-decoration: underline white;
 }
 
@@ -54,11 +53,42 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
 }
 
 .about-me {
+  display: flex;
+  flex-wrap: wrap;
   color: aliceblue;
-  text-decoration: underline;
+}
+
+.firstcolumn {
+  width: 10%;
+  border-right: 1px red solid;
+}
+
+.secondcolumn {
+  width: 60%;
+}
+
+.catpicture {
+  width: 75%;
+}
+
+.about-me .secondcolumn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subcolumn1 {
+  width: 50%;
+}
+
+.subcolumn2 {
+  width: 40%;
+  display: flex;
+  justify-content: start;
 }
 
 .my-work {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   color: white;
 }
@@ -67,36 +97,29 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   text-decoration: underline;
 }
 
-.project1 {
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  height: 800px;
-  width: 950px;
-  margin: 50px;
-  border-width: 10px;
-  border: white;
-  border-style: solid;
-}
- 
-.float-left {
-  display: inline-block;
-  justify-content: center;
+.firstcolumn {
+  width: 10%;
+  border-right: 1px white solid;
 }
 
-.project2 {
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  height: 800px;
-  width: 950px;
-  margin: 50px;
-  border-width: 10px;
-  border: white;
-  border-style: solid;
+.secondcolumn {
+  width: 60%;
 }
+
+#project1img {
+  width: 100%;
+}
+
+.TBD {
+  font-weight: bold;
+  font-size: 26px;
+  color: white;
+}
+
 
 .contact-me {
+  display: flex;
+  justify-content: start;
   color: whitesmoke;
   position: relative;
   margin-top: 20px;
@@ -106,19 +129,29 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   list-style-type: none;
 }
 
-
 .footer {
-  height: 150px;
-  font-size: 25px;
+  display: flex;
+  justify-content: center;
   color: aliceblue;
 }
 
 /* Used media queries to make the webpage resize based on device*/
 
-@media screen and (max-width: 992px) {
-  .about-me {
-    width: 100%;
-    float: center;
-  }
+@media screen and (min-width: 769px) {
 }
 
+@media screen and (max-width: 568px) {
+  .header nav {
+    width: 50%;
+  }
+  .about-me {
+    width: 100%;
+  }
+
+  .catpicture {
+    width: 500%;
+  }
+  #project1img {
+    width: 500%;
+  }
+}
