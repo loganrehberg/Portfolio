@@ -154,4 +154,8 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   #project1img {
     width: 500%;
   }
+  p, h3{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
