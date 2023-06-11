@@ -9,7 +9,7 @@ The portfolio project serves as a showcase of my skills, experiences, and accomp
 
 The main objectives of the project are as follows:
 
-    Presenting my Work: The portfolio website displays a collection of my notable projects, highlighting the key aspects, technologies used, and outcomes achieved.
+Presenting my Work: The portfolio website displays a collection of my notable projects, highlighting the key aspects, technologies used, and outcomes achieved.
 
 
 
@@ -17,13 +17,12 @@ The main objectives of the project are as follows:
 
 The portfolio project incorporates the following technologies and tools:
 
-    Front-end: HTML and CSS
+Front-end: HTML and CSS
 
   
+Version Control: Hosted on GitHUb
 
-    Version Control: Hosted on GitHUb
-
-    Deployment: GitHub Pages
+Deployment: GitHub Pages
     
 ## Links!
 
