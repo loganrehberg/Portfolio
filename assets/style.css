@@ -1,19 +1,12 @@
 /* used https://www.youtube.com/watch?v=PwWHL3RyQgk to setup the navigation bar
-used https://www.youtube.com/watch?v=S0a7PEOi0do for basic flexbox parameters
 used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav bar
 */
 * {
   padding: 10px;
   margin: 10px;
-  /* flex: 1 100%; */
 }
 
 .body {
-  /* display: flex;
-  flex-flow: row wrap;
-  text-align: left;
-  flex: 0 0 100%;
-  width: 100%;  */
   background-image: url("./images/compute-ea4c57a4.png");
 }
 
