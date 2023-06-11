@@ -21,9 +21,11 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   display: flex;
   flex-wrap: wrap;
   color: whitesmoke;
+  font-size: 25px;
 }
 .header nav {
   font-size: 25px;
+  
 }
 
 .header ul {
