@@ -18,7 +18,6 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
 }
 .header nav {
   font-size: 25px;
-  
 }
 
 .header ul {
@@ -29,14 +28,17 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   overflow: hidden;
 }
 
-.header li {
+.header li,
+a {
   float: right;
-}
-
-.header li a {
   color: white;
   text-decoration: none;
 }
+/* Added a to the repeating li element */
+/* .header li a {
+  color: white;
+  text-decoration: none;
+} */
 
 .header li a:hover {
   text-decoration: underline white;
@@ -53,25 +55,9 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   color: aliceblue;
 }
 
-/* .firstcolumn {
-  width: 10%;
-  border-right: 1px red solid;
-}
-
-.secondcolumn {
-  display: grid;
-  grid-template-rows: auto auto;
-  width: 60%;
-} */
-
 .catpicture {
   width: 200px;
   height: 200px;
-}
-
-.about-me .secondcolumn {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .subcolumn1 {
@@ -108,9 +94,6 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
   width: 100%;
 }
 
-
-
-
 .contact-me {
   display: flex;
   justify-content: start;
@@ -132,7 +115,6 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
 /* Used media queries to make the webpage resize based on device*/
 
 @media screen and (min-width: 769px) {
-  
 }
 
 @media screen and (max-width: 568px) {
@@ -145,17 +127,17 @@ used https://www.w3schools.com/css/css_navbar_horizontal.asp to setup the nav ba
 
   .catpicture {
     width: 500%;
-
   }
   #project1img {
     width: 100%;
   }
-  p, h3{
+  p,
+  h3 {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .secondcolumn{
+  .secondcolumn {
     width: 100%;
   }
 }
