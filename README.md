@@ -2,6 +2,9 @@
 
 # README: Portfolio Project
 
+![Image of Deplyoed website](![image](https://github.com/loganrehberg/Portfolio/assets/127784358/d0f72efb-db41-4d73-a5dd-abdc04694436)
+)
+
 Welcome to my portfolio project! This README provides an overview of my portfolio website.
 About the Project
 
